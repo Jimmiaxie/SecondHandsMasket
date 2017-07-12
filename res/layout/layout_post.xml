@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_itml" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/shopname1"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/publish_shopname"
+            android:layout_width="200dp"
+            android:layout_height="45dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:gravity="bottom"
+            android:text="@string/category"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/publish_category"
+            android:layout_width="200dp"
+            android:layout_height="45dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/publish_price"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:digits="1234567890."
+            android:numeric="decimal"
+             />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/decripe"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/publish_descripe"
+        android:layout_width="280dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:gravity="left" />
+
+    <ImageView
+        android:id="@+id/publish_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/addpic" 
+       />
+
+    <Button
+        android:id="@+id/publish_button"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/exitbuttonshape"
+        android:gravity="center"
+        android:text="@string/publishmessage"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</LinearLayout>

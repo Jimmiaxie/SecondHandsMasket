@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/my_self"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/myself_portrait"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/portraitshape"
+            android:src="@drawable/ic_launcher" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/myself_name "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/username"
+                android:textSize="17sp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/myself_login"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#00000000"
+                android:gravity="center_horizontal"
+                android:text="@string/denglu"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/my_self"
+        android:background="?android:attr/listDivider" />
+
+    <ListView
+        android:id="@+id/myself_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_self"
+        android:layout_marginTop="20dp"
+        android:dividerHeight="20dp" >
+    </ListView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/myself_listview"
+        android:background="?android:attr/listDivider" />
+
+    <Button
+        android:id="@+id/myself_exit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/myself_listview"
+        android:layout_marginTop="30dp"
+        android:background="#ff0000"
+        android:gravity="center"
+        android:text="@string/exit"
+        android:textSize="17sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

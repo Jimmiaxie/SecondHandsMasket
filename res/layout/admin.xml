@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <include layout="@layout/top_itml" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_weight="3"
+            android:paddingTop="10dp"
+            android:text="@string/uesrmanager"
+            android:textSize="20sp" />
+      
+          <Button
+             android:id="@+id/exit_btn"
+             android:layout_width="wrap_content"
+             android:paddingTop="10dp"
+             android:layout_height="wrap_content"
+             android:background="@drawable/wallet_base_contacts_icon_normal"
+             android:textColor="@color/springgreen" />
+            <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:text="退出"
+            android:textSize="20sp" />
+       
+    </LinearLayout>
+      <TextView style="@style/SeparatorLine" />
+          <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical" >
+    <Button
+        android:id="@+id/manager_btn"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_mess_receiver_btn_pressed"
+        android:text="管理用户" />
+
+      <Button
+        android:id="@+id/manager_register_btn"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_mess_receiver_btn_pressed"
+        android:text="管理注册用户" />
+    </LinearLayout>
+
+</LinearLayout>

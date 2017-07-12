@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <com.wmj.fragment.Tab1PictureFragment
+        android:id="@+id/slideshowView"  
+        android:layout_width="fill_parent"  
+        android:layout_height="160dp"  
+        android:layout_centerHorizontal="true" /> 
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/home_page_gridview"
+        android:gravity="center"
+        android:orientation="vertical">
+        <GridView
+            android:id="@+id/shop_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:numColumns="2"
+            android:verticalSpacing="30.0dip"  >
+        </GridView>
+
+    </LinearLayout>  
+
+</LinearLayout>

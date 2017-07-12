@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="210dp"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+           
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/user_phone"
+            android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="7dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+           
+            android:textSize="15sp" />
+    </LinearLayout>
+     <Button
+        android:id="@+id/disagree_btn"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/exitbuttonshape"
+        android:focusable="false"
+        android:text="@string/disagree"
+        android:textColor="#ffffff" />
+    <Button
+        android:id="@+id/agree_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/exitbuttonshape"
+        android:layout_toLeftOf="@id/disagree_btn"
+        android:focusable="false"
+        android:text="@string/agree"
+        android:textColor="#ffffff" />
+
+   
+
+</RelativeLayout>

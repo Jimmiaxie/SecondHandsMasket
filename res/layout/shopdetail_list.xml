@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/top_itml" />
+   <ImageView 
+       android:id="@+id/image_iv"
+       android:layout_width="match_parent"
+       android:layout_height="130dip"
+       android:src="@drawable/image_loading_fali"/>
+     <!-- 一条横线 -->
+    <TextView style="@style/SeparatorLine" />
+    <TextView
+        android:id="@+id/shopname_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/fuchsia"
+        android:paddingTop="8dp"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:text="@string/shopname1"/>
+     <TextView
+        android:id="@+id/category_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/fuchsia"
+        android:paddingTop="8dp"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:text="@string/category"/>
+      <TextView
+        android:id="@+id/price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/fuchsia"
+        android:paddingTop="8dp"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:text="@string/price"/>
+      <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/fuchsia"
+        android:paddingTop="8dp"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:text="@string/publishname"/>
+      
+        <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/fuchsia"
+        android:paddingTop="8dp"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:text="@string/time"
+        />
+        <TextView style="@style/SeparatorLine" />
+        <TextView
+        android:id="@+id/descripe_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/fuchsia"
+        android:paddingTop="8dp"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:text="@string/decripe"/>
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/fuchsia"
+        android:paddingTop="8dp"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:text="@string/call"/>
+        <Button
+           android:id="@+id/phone_btn"
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:background="@drawable/phone_contact_icon"
+           android:paddingLeft="20dp" />
+       <LinearLayout
+        android:id="@+id/recLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" 
+        android:gravity="bottom">
+        <Button 
+        android:id="@+id/assess_btn"
+        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:background="@drawable/top_banner"
+        android:textColor="@color/springgreen"
+        android:paddingBottom="0dp"
+        android:text="@string/discuss"
+        />
+        </LinearLayout>
+</LinearLayout>

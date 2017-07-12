@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/welcome"
+        android:textColor="#ffffff"
+        android:textSize="35sp" />
+
+    <EditText
+        android:id="@+id/login_name"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="#40000000"
+        android:drawableLeft="@drawable/username"
+        android:hint="@string/Username"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="#40000000"
+        android:drawableLeft="@drawable/password"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:textColor="#ffffff" />
+
+    <CheckBox
+        android:id="@+id/login_isremember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:text="@string/resmeberPassword"
+        android:textColor="#ffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dip" >
+
+        <Button
+            android:id="@+id/login_login"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/registered"
+            android:layout_alignBottom="@+id/registered"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="75dp"
+            android:background="@drawable/buttonshape"
+            android:text="@string/denglu1"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/login_registered"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/login_login"
+            android:layout_alignBottom="@+id/login_login"
+            android:layout_marginRight="56dp"
+            android:layout_toLeftOf="@+id/login_login"
+            android:background="@drawable/buttonshape"
+            android:text="@string/zhuce"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+</LinearLayout>
